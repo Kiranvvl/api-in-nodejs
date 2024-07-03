@@ -4,7 +4,7 @@ const app = express();
 require("dotenv").config();
 const mongoose = require ("mongoose")
 const router = require("./router/userRouter")
-mongoose.set("strictQuery",true);
+
 
 
 
