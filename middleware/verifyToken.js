@@ -7,7 +7,7 @@ const verifyToken = (req,res,next)=>{
     jwt.verify(token,process.env.TOKENKEY,(err,user)=>{
         if(err)return next(errorHandler(401,"aunthorised user"))
         req.user=user;
-        next;
+        next();
     })
 
 }
